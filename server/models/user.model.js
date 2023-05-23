@@ -11,18 +11,6 @@ const UserSchema = mongoose.Schema(
             type: String,
             required: [true, 'Last Name is required'],
     },
-        age: {
-            type: Number,
-            required: [true, 'Age is required for accurate nutritional recommendations '],
-    },
-        sex: {
-            type: String,
-            required: [true, 'Sex is required for accurate nutritional recommendations'],
-            enum: [
-                'Male',
-                'Female',
-            ],
-        },
         email: {
             type: String,
             required: [true, 'Email is required'],
