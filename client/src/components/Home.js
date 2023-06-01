@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import Button from 'react-bootstrap/Button'
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Button variant="primary">Primary</Button>
+      <Button variant="outline-primary">Primary</Button>
+    </div>
+    
+    
   )
 }
 
-export default Home
+export default Home;
