@@ -4,9 +4,8 @@ import Button from 'react-bootstrap/Button'
 
 const Home = () => {
   return (
-    <div>
-      <Button variant="primary">Primary</Button>
-      <Button variant="outline-primary">Primary</Button>
+    <div className='mt-5'>
+      Home
     </div>
     
     
