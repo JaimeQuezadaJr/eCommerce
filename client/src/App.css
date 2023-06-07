@@ -2,3 +2,6 @@
   mix-blend-mode: multiply;
   filter: contrast(2);
 }
+.top-padding {
+  margin-top: 70px;
+}

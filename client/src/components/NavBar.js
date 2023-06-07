@@ -7,6 +7,8 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
+import Dropdown from 'react-bootstrap/Dropdown';
+import Form from 'react-bootstrap/Form';
 import { motion } from 'framer-motion';
 
 
@@ -14,8 +16,14 @@ const NavBar = ({loggedIn, setLoggedIn}) => {
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
     const [show, setShow] = useState(false);
+    const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const handleClose1 = () => setShow1(false);
+    const handleShow1 = () => setShow1(true);
+    const handleClose2 = () => setShow2(false);
+    const handleShow2 = () => setShow2(true);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const [windowHeight, setWindowHeight] = useState(window.innerHeight)
     const setWindowDimensions = () => {
@@ -64,33 +72,87 @@ const NavBar = ({loggedIn, setLoggedIn}) => {
                 className="d-inline-block align-top hide-bg"
               />{' '}francois</Navbar.Brand>
                 {windowWidth<640?(
-                  
                   <Nav className=" justify-contend-end">
-                    <Nav.Link as={Link}><i className="bi bi-list" onClick={handleShow}></i></Nav.Link>
-                      <Offcanvas placement='end' show={show} onHide={handleClose}>
+                    <Nav.Link as={Link}><i className="bi bi-list" onClick={handleShow2}></i></Nav.Link>
+                      <Offcanvas placement='end' show={show2} onHide={handleClose2}>
                         <Offcanvas.Header closeButton>
                           <Offcanvas.Title>Products</Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                     <Nav className=" justify-contend-end">
-                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/face">Face</Nav.Link>
-                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/body">Body</Nav.Link>
-                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/wellness">Wellness</Nav.Link>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/face">Face</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/body">Body</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/wellness">Wellness</Nav.Link></motion.div>
                     </Nav>
                   </Offcanvas.Body>
                 </Offcanvas>
-
-
-                  <Nav.Link as={Link} to="/register"><i className="bi bi-search"></i></Nav.Link>
-                  <Nav.Link as={Link} to="/cart"><i className="bi bi-bag"></i><i className="bi bi-1-circle-fill"></i></Nav.Link>
+                <Nav.Link as={Link}><i className="bi bi-search" onClick={handleShow1}></i></Nav.Link>
+                      <Offcanvas placement='end' show={show1} onHide={handleClose1}>
+                        <Offcanvas.Header closeButton>
+                          <Offcanvas.Title>Products</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                        <Form className="d-flex">
+                          <Form.Control
+                            type="search"
+                            placeholder="Search"
+                            className="me-2"
+                            aria-label="Search"
+                          />
+                          <Button variant="outline-dark">Search</Button>
+                        </Form>
+                  </Offcanvas.Body>
+                </Offcanvas>
+                <Nav.Link as={Link}><i className="bi bi-bag" onClick={handleShow}></i><i className="bi bi-1-circle-fill"></i></Nav.Link>
+                      <Offcanvas placement='end' show={show} onHide={handleClose}>
+                        <Offcanvas.Header closeButton>
+                          <Offcanvas.Title>Hello</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                    <Nav className=" justify-contend-end">
+                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/face">Login</Nav.Link>
+                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/body">Register</Nav.Link>
+                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/wellness">Orders</Nav.Link>
+                    </Nav>
+                  </Offcanvas.Body>
+                </Offcanvas>
                 </Nav>
                 ):(
+                  
                   <Nav className=" justify-contend-end">
                   <Nav.Link style={{fontSize:'small'}} as={Link} to="/login" className='d-flex align-items-center'>Face</Nav.Link>
                   <Nav.Link style={{fontSize:'small'}}  as={Link} to="/login"className='d-flex align-items-center'>Body</Nav.Link>
                   <Nav.Link style={{fontSize:'small'}} as={Link} to="/login" className='d-flex align-items-center'>Wellness</Nav.Link>
-                  <Nav.Link as={Link} to="/register"><i className="bi bi-search"></i></Nav.Link>
-                  <Nav.Link as={Link} to="/cart"><i className="bi bi-bag"></i><i className="bi bi-1-circle-fill"></i></Nav.Link>
+                  <Nav.Link as={Link}><i className="bi bi-search" onClick={handleShow1}></i></Nav.Link>
+                      <Offcanvas placement='end' show={show1} onHide={handleClose1}>
+                        <Offcanvas.Header closeButton>
+                          <Offcanvas.Title>Products</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                        <Form className="d-flex">
+                          <Form.Control
+                            type="search"
+                            placeholder="Search"
+                            className="me-2"
+                            aria-label="Search"
+                          />
+                          <Button variant="outline-dark">Search</Button>
+                        </Form>
+                  </Offcanvas.Body>
+                </Offcanvas>
+                  <Nav.Link as={Link}><i className="bi bi-bag" onClick={handleShow}></i><i className="bi bi-1-circle-fill"></i></Nav.Link>
+                      <Offcanvas placement='end' show={show} onHide={handleClose}>
+                        <Offcanvas.Header closeButton>
+                          <Offcanvas.Title>Hello</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                    <Nav className=" justify-contend-end">
+                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/face">Login</Nav.Link></motion.div>
+                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/body">Register</Nav.Link></motion.div>
+                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/wellness">Orders</Nav.Link></motion.div> 
+                    </Nav>
+                  </Offcanvas.Body>
+                </Offcanvas>
                 </Nav>
                 )}
                 
