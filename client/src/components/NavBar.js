@@ -15,6 +15,7 @@ import { motion } from 'framer-motion';
 const NavBar = ({loggedIn, setLoggedIn}) => {
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
+    const [isOpen, setIsOpen] = useState(false)
     const [show, setShow] = useState(false);
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
@@ -110,9 +111,9 @@ const NavBar = ({loggedIn, setLoggedIn}) => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                     <Nav className=" justify-contend-end">
-                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/face">Login</Nav.Link>
-                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/body">Register</Nav.Link>
-                      <Nav.Link style={{fontSize:'large'}} as={Link} to="/wellness">Orders</Nav.Link>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/face">Login</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/body">Register</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/wellness">Orders</Nav.Link></motion.div>
                     </Nav>
                   </Offcanvas.Body>
                 </Offcanvas>
