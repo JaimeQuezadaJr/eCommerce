@@ -1,17 +1,21 @@
 import './App.css';
-import { Routes } from 'react-router-dom';
+import { Routes, Route, useLocation} from 'react-router-dom';
 import { useState } from 'react';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
+import Product from './components/Product';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
-
+  const location = useLocation();
   return (
     <div>
       <NavBar/>
-          <Home/>
-        
-      
+      <AnimatePresence mode='wait'/>
+        <Routes location={location} key={location.pathname}>
+          <Route path={'/'} element={<Home/>}/>
+          <Route path={'/product'} element={<Product/>}/>
+        </Routes>
     </div>
   );
 }
