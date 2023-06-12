@@ -11,11 +11,12 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <AnimatePresence mode='wait'/>
+      <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route path={'/'} element={<Home/>}/>
           <Route path={'/product'} element={<Product/>}/>
         </Routes>
+        </AnimatePresence>
     </div>
   );
 }
