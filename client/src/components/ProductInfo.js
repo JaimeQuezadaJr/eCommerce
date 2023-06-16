@@ -1,20 +1,50 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { motion } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 
-const Product = () => {
+const ProductInfo = () => {
+    const { scrollYProgress } = useScroll();
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    const [windowHeight, setWindowHeight] = useState(window.innerHeight)
+    const setWindowDimensions = () => {
+      setWindowWidth(window.innerWidth)
+      setWindowHeight(window.innerHeight)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', setWindowDimensions);
+        return () => {
+          window.removeEventListener('resize', setWindowDimensions)
+        }
+      }, [])
+
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity:1 }} exit={{ opacity: 0}} transition={{duration:1}}>
     <div className='top-padding'>
       <Container>
+      {windowWidth>640?(
         <Row>
           <Col className='text-center'>
           <h1 className='product-title'>Face Glow</h1>
           </Col>
+        </Row>)
+        :<h1 className='text-center'>Face Glow</h1>}
+        <Row>
+            
+            <Col className='d-flex justify-content-center' md>
+          <img src='Lotion-Bottle-Cosmetic-Mockup.jpg' className='img-fluid shadow p-3 mb-5 bg-body rounded'></img>
+          </Col>
+            
         </Row>
+        <Row>
+            <Col>
+                <p>Ingredients</p>
+            </Col>
+        </Row>
+
         <Row>
           <Col className='d-flex justify-content-center' md>
           <img src='Lotion-Bottle-Cosmetic-Mockup.jpg' className='img-fluid shadow p-3 mb-5 bg-body rounded'></img>
@@ -37,8 +67,7 @@ const Product = () => {
       </Container>
     </div>
     </motion.div>
-    
   )
 }
 
-export default Product
+export default ProductInfo

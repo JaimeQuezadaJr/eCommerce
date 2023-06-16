@@ -81,9 +81,9 @@ const NavBar = ({loggedIn, setLoggedIn}) => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                     <Nav className=" justify-contend-end">
-                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show2} onClick={handleClose2}>Face</Nav.Link></motion.div>
-                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show2} onClick={handleClose2}>Body</Nav.Link></motion.div>
-                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show2} onClick={handleClose2}>Wellness</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show2} onClick={handleClose2}>Face</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show2} onClick={handleClose2}>Body</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show2} onClick={handleClose2}>Wellness</Nav.Link></motion.div>
                     </Nav>
                   </Offcanvas.Body>
                 </Offcanvas>
@@ -111,9 +111,9 @@ const NavBar = ({loggedIn, setLoggedIn}) => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                     <Nav className=" justify-contend-end">
-                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show} onClick={handleClose}>Login</Nav.Link></motion.div>
-                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show} onClick={handleClose}>Register</Nav.Link></motion.div>
-                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show} onClick={handleClose}>Orders</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show} onClick={handleClose}>Login</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show} onClick={handleClose}>Register</Nav.Link></motion.div>
+                    <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show} onClick={handleClose}>Orders</Nav.Link></motion.div>
                     </Nav>
                   </Offcanvas.Body>
                 </Offcanvas>
@@ -121,7 +121,7 @@ const NavBar = ({loggedIn, setLoggedIn}) => {
                 ):(
                   
                   <Nav className=" justify-contend-end">
-                  <Nav.Link style={{fontSize:'small'}} as={Link} to="/product" className='d-flex align-items-center'>Face</Nav.Link>
+                  <Nav.Link style={{fontSize:'small'}} as={Link} to="/productinfo" className='d-flex align-items-center'>Face</Nav.Link>
                   <Nav.Link style={{fontSize:'small'}}  as={Link} to="/login"className='d-flex align-items-center'>Body</Nav.Link>
                   <Nav.Link style={{fontSize:'small'}} as={Link} to="/login" className='d-flex align-items-center'>Wellness</Nav.Link>
                   <Nav.Link as={Link}><i className="bi bi-search" onClick={handleShow1}></i></Nav.Link>
@@ -148,9 +148,9 @@ const NavBar = ({loggedIn, setLoggedIn}) => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                     <Nav className=" justify-contend-end">
-                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show} onClick={handleClose}>Login</Nav.Link></motion.div>
-                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show} onClick={handleClose}>Register</Nav.Link></motion.div>
-                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/product" show={show} onClick={handleClose}>Orders</Nav.Link></motion.div> 
+                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show} onClick={handleClose}>Login</Nav.Link></motion.div>
+                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show} onClick={handleClose}>Register</Nav.Link></motion.div>
+                      <motion.div whileHover={{scale:0.9}} whileTap={{ scale: 1.1 }}><Nav.Link style={{fontSize:'large'}} as={Link} to="/productinfo" show={show} onClick={handleClose}>Orders</Nav.Link></motion.div> 
                     </Nav>
                   </Offcanvas.Body>
                 </Offcanvas>
