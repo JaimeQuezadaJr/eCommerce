@@ -40,6 +40,7 @@ const ProductInfo = () => {
             <Col></Col>
         </Row>
 
+        {/* ingredients */}
         <section>
         <Row>
             <Col>
@@ -63,19 +64,29 @@ const ProductInfo = () => {
         <Row>
         <Col className='d-flex justify-content-center'>
             <div className='d-flex flex-column align-items-center justify-content-center'>
-            {windowWidth>640?(
-            <p className='fw-bold text-secondary text-center info-p'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>):
-            <p className='fw-bold text-secondary text-center'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>}
-            <div className='mt-2'>
-                <Button variant="outline-secondary">Learn More</Button>{' '}
-                <Button variant="outline-secondary">Add to Bag</Button>{' '}
+                {windowWidth>640?(
+                    <>
+                <p className='fw-bold text-secondary text-center info-p'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
+                <div className='mt-2'>
+                    <Button variant="outline-secondary">Learn More</Button>{' '}
+                    <Button variant="outline-secondary">Add to Bag</Button>{' '}
+                </div> </>):
+
+                <>
+                <p className='fw-bold text-secondary text-center'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
+                <div className='mt-2'>
+                    <Button variant="outline-secondary" size='sm'>Learn More</Button>{' '}
+                    <Button variant="outline-secondary" size='sm'>Add to Bag</Button>{' '}
                 </div>
+                </> }
+                
             </div>
             
             </Col>
         </Row>
         </section>
-
+        
+        {/* benefits */}
         <section>
             <Row>
                 <Col>
@@ -98,17 +109,30 @@ const ProductInfo = () => {
             </Row>
             <Row>
             <Col className='d-flex justify-content-center'>
-                <div className='d-flex flex-column align-items-center justify-content-center'>
+            <div className='d-flex flex-column align-items-center justify-content-center'>
+                {windowWidth>640?(
+                    <>
                 <p className='fw-bold text-secondary text-center info-p'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
                 <div className='mt-2'>
                     <Button variant="outline-secondary">Learn More</Button>{' '}
                     <Button variant="outline-secondary">Add to Bag</Button>{' '}
-                    </div>
+                </div> </>):
+
+                <>
+                <p className='fw-bold text-secondary text-center'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
+                <div className='mt-2'>
+                    <Button variant="outline-secondary" size='sm'>Learn More</Button>{' '}
+                    <Button variant="outline-secondary" size='sm'>Add to Bag</Button>{' '}
                 </div>
+                </> }
+                
+            </div>
                 
                 </Col>
             </Row>
         </section>
+
+        {/* how to use */}
         <section>
             <Row>
                 <Col>
@@ -131,13 +155,24 @@ const ProductInfo = () => {
             </Row>
             <Row>
             <Col className='d-flex justify-content-center'>
-                <div className='d-flex flex-column align-items-center justify-content-center'>
+            <div className='d-flex flex-column align-items-center justify-content-center'>
+                {windowWidth>640?(
+                    <>
                 <p className='fw-bold text-secondary text-center info-p'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
                 <div className='mt-2'>
-                <Button variant="outline-secondary">Learn More</Button>{' '}
-                <Button variant="outline-secondary">Add to Bag</Button>{' '}
+                    <Button variant="outline-secondary">Learn More</Button>{' '}
+                    <Button variant="outline-secondary">Add to Bag</Button>{' '}
+                </div> </>):
+
+                <>
+                <p className='fw-bold text-secondary text-center'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
+                <div className='mt-2'>
+                    <Button variant="outline-secondary" size='sm'>Learn More</Button>{' '}
+                    <Button variant="outline-secondary" size='sm'>Add to Bag</Button>{' '}
                 </div>
-                </div>
+                </> }
+                
+            </div>
                 
             </Col>
             </Row>
