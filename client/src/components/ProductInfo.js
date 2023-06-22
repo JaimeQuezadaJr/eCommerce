@@ -68,14 +68,14 @@ const ProductInfo = () => {
                     <>
                 <p className='fw-bold text-secondary text-center info-p'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
                 <div className='mt-2'>
-                    <Button variant="outline-secondary">Learn More</Button>{' '}
+                    <Button variant="outline-secondary">Buy Now</Button>{' '}
                     <Button variant="outline-secondary">Add to Bag</Button>{' '}
                 </div> </>):
 
                 <>
                 <p className='fw-bold text-secondary text-center'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
                 <div className='mt-2'>
-                    <Button variant="outline-secondary" size='sm'>Learn More</Button>{' '}
+                    <Button variant="outline-secondary" size='sm'>Buy Now</Button>{' '}
                     <Button variant="outline-secondary" size='sm'>Add to Bag</Button>{' '}
                 </div>
                 </> }
@@ -114,14 +114,14 @@ const ProductInfo = () => {
                     <>
                 <p className='fw-bold text-secondary text-center info-p'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
                 <div className='mt-2'>
-                    <Button variant="outline-secondary">Learn More</Button>{' '}
+                    <Button variant="outline-secondary">Buy Now</Button>{' '}
                     <Button variant="outline-secondary">Add to Bag</Button>{' '}
                 </div> </>):
 
                 <>
                 <p className='fw-bold text-secondary text-center'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
                 <div className='mt-2'>
-                    <Button variant="outline-secondary" size='sm'>Learn More</Button>{' '}
+                    <Button variant="outline-secondary" size='sm'>Buy Now</Button>{' '}
                     <Button variant="outline-secondary" size='sm'>Add to Bag</Button>{' '}
                 </div>
                 </> }
@@ -133,7 +133,7 @@ const ProductInfo = () => {
         </section>
 
         {/* how to use */}
-        <section>
+        <section className='mb-5'>
             <Row>
                 <Col>
                     <p className='fw-bold text-secondary'>How to Use</p>
@@ -160,14 +160,14 @@ const ProductInfo = () => {
                     <>
                 <p className='fw-bold text-secondary text-center info-p'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
                 <div className='mt-2'>
-                    <Button variant="outline-secondary">Learn More</Button>{' '}
+                    <Button variant="outline-secondary">Buy Now</Button>{' '}
                     <Button variant="outline-secondary">Add to Bag</Button>{' '}
                 </div> </>):
 
                 <>
                 <p className='fw-bold text-secondary text-center'>Ex culpa velit cillum Lorem dolor proident laboris in nisi magna do deserunt minim. Proident excepteur non eiusmod labore labore voluptate reprehenderit dolor nisi anim. Ipsum tempor veniam do dolore in sit ut mollit pariatur velit eiusmod. Qui duis amet aliquip cillum eu consequat et qui sint reprehenderit.</p>
                 <div className='mt-2'>
-                    <Button variant="outline-secondary" size='sm'>Learn More</Button>{' '}
+                    <Button variant="outline-secondary" size='sm'>Buy Now</Button>{' '}
                     <Button variant="outline-secondary" size='sm'>Add to Bag</Button>{' '}
                 </div>
                 </> }
