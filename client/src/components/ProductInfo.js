@@ -41,7 +41,7 @@ const ProductInfo = () => {
         </Row>
 
         {/* ingredients */}
-        <section>
+        <section className='mb-4'>
         <Row>
             <Col>
                 <p className='fw-bold text-secondary'>Ingredients</p>
@@ -87,7 +87,7 @@ const ProductInfo = () => {
         </section>
         
         {/* benefits */}
-        <section>
+        <section className='mb-4'>
             <Row>
                 <Col>
                     <p className='fw-bold text-secondary'>Benefits</p>
