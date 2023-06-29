@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Product from './components/Product';
 import { AnimatePresence } from 'framer-motion';
 import ProductInfo from './components/ProductInfo';
+import BuyProduct from './components/BuyProduct';
 
 function App() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path={'/'} element={<Home/>}/>
           <Route path={'/productinfo'} element={<ProductInfo/>}/>
+          <Route path={'/buyproduct'} element={<BuyProduct/>}/>
         </Routes>
         </AnimatePresence>
     </div>

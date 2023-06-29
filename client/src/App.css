@@ -5,6 +5,9 @@
 .top-padding {
   margin-top: 70px;
 }
+.info-top-padding {
+  margin-top: 40px;
+}
 
 .carousel-item img {
   height: 100%; /* Bootstrap handles width already */
@@ -37,4 +40,22 @@
 .image-size {
   width: 50%;
 
+}
+
+.center-element {
+  width:500px;
+  height:500px;
+  margin:0 auto;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-250px;
+  margin-top:-250px;
+}
+
+.row-padding {
+  height: 230px;
+}
+.row-bottom-padding {
+  height: 300px;
 }
