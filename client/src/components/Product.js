@@ -27,7 +27,6 @@ const Product = () => {
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <div className='mt-2'>
-              <Button variant="outline-secondary">Learn More</Button>{' '}
               <Button variant="outline-secondary">Add to Bag</Button>{' '}
               </div>
             </div>
