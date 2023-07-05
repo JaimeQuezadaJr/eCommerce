@@ -21,12 +21,13 @@ const Product = () => {
           </Col>
           <Col className='d-flex justify-content-center' md>
             <div className='d-flex flex-column align-items-center justify-content-center'>
-            <h1 className='fw-bold'>Face Glow</h1>
+            {/* <h1 className='fw-bold'>Face Glow</h1> */}
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <div className='mt-2'>
+              <p>Quantity</p>
               <Button variant="outline-secondary">Add to Bag</Button>{' '}
               </div>
             </div>
