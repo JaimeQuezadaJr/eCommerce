@@ -24,6 +24,9 @@ const Product = () => {
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
+            <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
+            <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
+            <p className='fw-bold text-secondary text-center'>Aliquip ad veniam officia sit occaecat commodo Lorem laborum aute consectetur adipisicing minim.</p>
             <div className='mt-2'>
               <p>Quantity</p>
               <Button variant="outline-secondary">Add to Bag</Button>{' '}
