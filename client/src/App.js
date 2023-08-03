@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import { AnimatePresence } from 'framer-motion';
 import ProductInfo from './components/ProductInfo';
 import BuyProduct from './components/BuyProduct';
+import Cart from './components/Cart';
 
 function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function App() {
           <Route path={'/'} element={<Home/>}/>
           <Route path={'/productinfo'} element={<ProductInfo/>}/>
           <Route path={'/buyproduct'} element={<BuyProduct/>}/>
+          <Route path={'/cart'} element={<Cart/>}/>
         </Routes>
         </AnimatePresence>
     </div>
