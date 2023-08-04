@@ -5,8 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { motion, useScroll } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+
 
 const ProductInfo = () => {
     const navigate = useNavigate();
