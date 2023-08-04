@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion, useScroll } from 'framer-motion';
 
 const Cart = () => {
   const navigate = useNavigate();
